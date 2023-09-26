@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/qxzZtRw/Health.png",
+        "title": "Item 1",
+        "category": "Health",
+        "category_bg_color": "(red: 0, green: 0.32, blue: 1, alpha: 1)",
+        "card_bg_color": "#0052FF26",
+        "button_bg_color": "#0052FF26",
+        "price": "$19.99",
+        "description": "Description for Item 1"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/tJz1142/Education.png",
+        "title": "Item 2",
+        "category": "Education",
+        "category_bg_color": "red",
+        "card_bg_color": "white",
+        "button_bg_color": "blue",
+        "price": "$24.99",
+        "description": "Description for Item 2"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/fvWLP2Z/Clothing.png",
+        "title": "Item 3",
+        "category": "Clothing",
+        "category_bg_color": "blue",
+        "card_bg_color": "white",
+        "button_bg_color": "green",
+        "price": "$29.99",
+        "description": "Description for Item 3"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/w0Q8VSR/Food.png",
+        "title": "Item 4",
+        "category": "Food",
+        "category_bg_color": "yellow",
+        "card_bg_color": "white",
+        "button_bg_color": "red",
+        "price": "$39.99",
+        "description": "Description for Item 4"
+    }
+    
+]
