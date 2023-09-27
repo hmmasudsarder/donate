@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { Pie, PieChart, ResponsiveContainer } from "recharts";
 
-// const [data, setData] = useState([]);
-// const {price } = data;
-// useEffect(() => {
-//     fetch('/donation.json')
-//     .then(res => res.json())
-//     .then(data => setData(data))
-// }, []);
+
 
 const Statistics = () => {
+    const [data, setData] = useState([]);
+const {price } = data;
+useEffect(() => {
+    fetch('/donation.json')
+    .then(res => res.json())
+    .then(data => setData(data))
+}, []);
     return (
         <div>
            <ResponsiveContainer width="100%" height="100%">
