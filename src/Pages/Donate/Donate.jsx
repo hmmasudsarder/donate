@@ -4,7 +4,7 @@ import swal from "sweetalert";
 
 const Donate = () => {
   const [donate, setDonate] = useState({});
-  const { image, title, description, price } = donate;
+  const { image, title, description, price, categoryBackground } = donate;
   const handleDonation = () => {
     const addedDonation = [];
     const donationsItem = JSON.parse(localStorage.getItem("donations"));
@@ -40,8 +40,8 @@ const Donate = () => {
             <img className=" h-[75vh] " src={image} alt="ui/ux review check" />
             <div className="absolute bottom-0 right-0 left-0 bg-black opacity-75 py-6">
             <button
-              onClick={handleDonation}
-              className="bg-[#FF444A] px-3 font-bold text-white py-4 rounded-lg relative -top-2 left-5 z-auto"
+              onClick={handleDonation} style={{backgroundColor: categoryBackground}}
+              className="px-3 font-bold text-white py-4 rounded-lg relative -top-2 left-5 z-auto"
             >
              Donate ${price}
             </button>
