@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 const Donate = () => {
@@ -17,9 +17,9 @@ const Donate = () => {
         if(!isExits){
             addedDonation.push(...donationsItem, donate);
             localStorage.setItem("donations", JSON.stringify(addedDonation));
-            swal("Good job!", "You Donation SuccessFully", "success");
+            swal("SuccessFully Your Donate Reciviead!", "You Donation SuccessFully", "success");
         }else{
-            swal("Error!", "You clicked the button!", "error");
+            swal("Your Are already Donated!", "You clicked the button!", "error");
         }
     }
   };
@@ -38,15 +38,16 @@ const Donate = () => {
         <div className="">
           <div className="relative z-0  m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
             <img className=" h-[75vh] " src={image} alt="ui/ux review check" />
-          </div>
-          <div className="bg-[#12121266] pt-28 ">
+            <div className="absolute bottom-0 right-0 left-0 bg-black opacity-75 py-6">
             <button
               onClick={handleDonation}
-              className="bg-[#FF444A] px-7 font-bold text-white py-4 rounded-lg relative -top-20 left-5 z-auto"
+              className="bg-[#FF444A] px-3 font-bold text-white py-4 rounded-lg relative -top-2 left-5 z-auto"
             >
-              {price}
+             Donate ${price}
             </button>
           </div>
+          </div>
+          
         </div>
         <div className="p-6">
           <h4 className="block font-sans text-4xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
